@@ -41,96 +41,97 @@
                     <div class="row">
                         <div class="col-xs-12" >
                             <div class="container-fluid" id="display">
-
+                                <h4 id="ans"></h4>
                             </div>
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-xs-3">
-                            <button class="btn">AC</button>
+                            <a href="https://github.com/ekpo-d" target="_blank">
+                            <button class="btn" id="btnAc"><i class="fa fa-github-square"></i></button>
+                            </a>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">CE</button>
+                            <button class="btn" id="btnCe">CE</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn"><--</button>
+                            <button class="btn" id="btnBack"><--</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">/</button>
-                        </div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <button class="btn">x^2</button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn">x^1/2</button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn">(-)</button>
-
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn">%</button>
+                            <button value="%" class="btn"id="btnMod">%</button>
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-xs-3">
-                            <button class="btn">7</button>
+                            <button class="btn"id="btnSquare">x^2</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">8</button>
+                            <button class="btn"id="btnRoot">x^1/2</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">9</button>
+                            <button value="(-1)*" class="btn"id="btnNeg">(-)</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">*</button>
-                        </div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <button class="btn">4</button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn">5</button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn">6</button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn">-</button>
+                            <button value="/" class="btn" id="btnDiv">/</button>
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-xs-3">
-                            <button value="1" class="btn" id="btnOne">1</button>
+                            <button value="7" class="btn" id="btn7">7</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">2</button>
+                            <button value="8" class="btn" id="btn8">8</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">3</button>
+                            <button value="9" class="btn" id="btn9">9</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">+</button>
+                            <button value="*" class="btn" id="btnMulti">*</button>
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-xs-3">
-                            <button class="btn">•</button>
+                            <button value="4" class="btn" id="btn4">4</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">0</button>
+                            <button value="5" class="btn" id="btn5">5</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">Ans</button>
+                            <button value="6" class="btn" id="btn6">6</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn">=</button>
+                            <button value="-" class="btn" id="btnMinus">-</button>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button value="1" class="btn" id="btn1">1</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button value="2" class="btn" id="btn2">2</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button value="3" class="btn" id="btn3">3</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button value="+" class="btn" id="btnPlus">+</button>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button value="." class="btn" id="btnDot">•</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button value="0" class="btn" id="btn0">0</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn" id="btnAns">Ans</button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button value="=" class="btn" id="btnEquals">=</button>
                         </div>
                     </div><br><br>
-                    <div  style="padding: 0px">
+                    <!--<div  style="padding: 0px">
                         <a href="https://github.com/ekpo-d">
                             <button class="btn btnLink"><i class="fa fa-github"></i></i></button>
                         </a>
@@ -140,16 +141,170 @@
                         <a href="http://www.freecodecamp.com/ekpo-d">
                             <button class="btn btnLink"><i class="fa fa-fire fa-fw"></i></button>
                         </a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
     <script>
         var btn1Val;
+        var btn2Val;
+        var btn3Val;
+        var btn4Val;
+        var btn5Val;
+        var btn6Val;
+        var btn7Val;
+        var btn8Val;
+        var btn9Val;
+        var btn0Val;
+        var btn1Val;
+        var btnAnsVal;
+        var btnEqualsVal;
+        var btnDotVal;
+        var btnPlusVal;
+        var btnMinusVal;
+        var btnMultiVal;
+        var btnModVal;
+        var btnNegVal;
+        var btnRootVal;
+        var btnSquareVal;
+        var btnDivVal;
+        var btnBackVal;
+        var btnCeVal;
+        var testVar='';
+        var testAns;
+
+
         $(document).ready(function(){
-            $('#btnOne').click(function(){
+            $('#btn1').click(function(){
                 btn1Val = $(this).val();
-                console.log(btn1Val);
+                testVar+=btn1Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn2').click(function(){
+                btn2Val = $(this).val();
+                testVar+=btn2Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn3').click(function(){
+                btn3Val = $(this).val();
+                testVar+=btn3Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn4').click(function(){
+                btn4Val = $(this).val();
+                testVar+=btn4Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn5').click(function(){
+                btn5Val = $(this).val();
+                testVar+=btn5Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn6').click(function(){
+                btn6Val = $(this).val();
+                testVar+=btn6Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn7').click(function(){
+                btn7Val = $(this).val();
+                testVar+=btn7Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn8').click(function(){
+                btn8Val = $(this).val();
+                testVar+=btn8Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn9').click(function(){
+                btn9Val = $(this).val();
+                testVar+=btn9Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btn0').click(function(){
+                btn0Val = $(this).val();
+                testVar+=btn0Val;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnDot').click(function(){
+                btnDotVal = $(this).val();
+                testVar+=btnDotVal;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnPlus').click(function(){
+                btnPlusVal = $(this).val();
+                testVar+=btnPlusVal;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnMinus').click(function(){
+                btnMinusVal = $(this).val();
+                testVar+=btnMinusVal;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnMulti').click(function(){
+                btnMultiVal = $(this).val();
+                testVar+=btnMultiVal;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnDiv').click(function(){
+                btnDivVal = $(this).val();
+                testVar+=btnDivVal;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnMod').click(function(){
+                btnModVal = $(this).val();
+                testVar+=btnModVal;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnNeg').click(function(){
+                btnNegVal = $(this).val();
+                testVar+=btnNegVal;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnSquare').click(function(){
+                btnSquareVal = $(this).val();
+                testVar*=testVar;
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnRoot').click(function(){
+                testVar=Math.sqrt(testVar);
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnCe').click(function(){
+                testVar='';
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+'0'+'</h4>');
+            });
+            $('#btnBack').click(function(){
+                testVar=testVar.substr(0,(testVar.length-1));
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testVar+'</h4>');
+            });
+            $('#btnEquals').click(function(){
+                btnEqualsVal = $(this).val();
+                testAns= eval(testVar);
+                $('#ans').remove();
+                $('#display').append('<h4 id="ans">'+testAns+'</h4>');
+                console.log(btnEqualsVal);
+                console.log(testAns);
             });
         });
     </script>
